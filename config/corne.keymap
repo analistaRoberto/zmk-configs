@@ -3,8 +3,7 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#define MACRO_RBRACKET &kp RBRACKET
-#define MACRO_SHIFT_RBRACKET &kp RSHFT &kp RBRACKET
+#define MACRO_RBRACKET &kp RBKT
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
