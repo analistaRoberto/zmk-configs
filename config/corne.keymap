@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-#define MACRO_RBRACKET &kp RBKT
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -48,8 +47,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp RA(Q) &kp HASH &kp DLLR &kp PRCNT   &kp LS(NUBS) &kp LS(N0) &trans &kp LS(N8) &kp LS(N9) &kp DEL
-   &kp LSHFT &kp GRAVE   &kp LS(N1) &trans   &trans   &trans    &kp NUBS &kp UP &kp RBKT   &kp KP_MULTIPLY &kp KP_DIVIDE &kp MINUS
-   &kp LCTRL &kp RA(MINUS)   &trans &trans   &trans   &trans      &kp LEFT &kp DOWN  &kp RIGHT  &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)
+   &kp LSHFT &kp GRAVE   &kp LS(N1) &trans   &trans   &trans  &kp NUBS &kp UP &trans &kp KP_MULTIPLY &kp KP_DIVIDE &kp MINUS
+   &kp LCTRL &kp RA(MINUS)   &trans &trans   &trans   &trans  &kp LEFT &kp DOWN &kp RIGHT &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
 
                         >;
