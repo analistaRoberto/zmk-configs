@@ -7,6 +7,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -32,20 +33,20 @@
                         bindings = <
    &kp ESC   &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &trans &trans &trans &trans &trans &kp BSPC
    &kp LSHFT &kp N6   &kp N7   &kp N8   &kp N9   &kp N0   &trans &trans &trans &trans &trans &trans 
-   &kp LCTRL &kp LBKT &kp RBKT &kp PLUS &kp DLLR &rgb_ug RGB_TOG   &trans &trans &trans &trans &trans &trans 
+   &kp LCTRL &kp LBKT &kp RBKT &kp PLUS &kp DLLR &trans   &trans &trans &trans &trans &trans &trans 
                     &kp LGUI     &trans       &kp SPACE   &kp RET  &trans   &kp RALT
                            >;
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  !  |  @  |  #  |  $  |  %  |   |  >  |  =  |  }  |  (  |  ?  |  DEL |
-// | CTRL |  |  |  *  |  \  |     |     |   |  <  |  UP |  {  |  )  |  /  |  "   |
-// | SHFT |     |     |     |     |     |   | LFT | DWN | RGT |  ;  |  :  |  _   |
+// | TAB  |  !  |  @    |  #  |  $  |  %  |   |  >  |  =  |  }  |  (  |  ?  |  DEL |
+// | CTRL |  |  |  *    |  \  |     |     |   |  <  |  UP |  {  |  )  |  /  |  "   |
+// | SHFT | RGB | light |     |     |     |   | LFT | DWN | RGT |  ;  |  :  |  _   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp LT   &kp EQUAL &kp LBRC  &kp LPAR &kp QMARK &kp DEL
    &kp LCTRL &kp PIPE &kp ASTRK &kp BSLH &trans   &trans      &kp GT   &kp UP    &kp RBRC  &kp RPAR &kp FSLH  &kp DQT
-   &kp LSHFT &rgb_ug RGB_TOG   &trans    &trans   &trans   &trans      &kp LEFT &kp DOWN  &kp RIGHT &kp SEMI &kp COLON &kp UNDER
+   &kp LSHFT &rgb_ug RGB_TOG   &bl BL_TOG    &trans   &trans   &trans      &kp LEFT &kp DOWN  &kp RIGHT &kp SEMI &kp COLON &kp UNDER
                                 &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
