@@ -39,8 +39,8 @@
                 };
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |  !  |  @    |  #  |  $  |  %  |   |  >  |  =  |  }  |  (  |  ?  |  DEL |&rgb_ug RGB_COLOR_HSB(240, 100, 100)
-// | CTRL |  |  |  *    |  \  |     |  `  |   |  <  |  UP |  {  |  )  |  /  |  "   |&rgb_ug RGB_COLOR_HSB(0, 0, 100)
+// | TAB  |  !  |  @    |  #  |  $  |  %  |   |  >  |  =  |  ( |  }  |  ?  |  DEL |&rgb_ug RGB_COLOR_HSB(240, 100, 100)
+// | CTRL |  |  |  *    |  \  |     |  `  |   |  <  |  UP |  ( |  }  |  /  |  "   |&rgb_ug RGB_COLOR_HSB(0, 0, 100)
 // | SHFT | RGB | light |     |     |     |   | LFT | DWN | RGT |  ;  |  :  |  _   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
