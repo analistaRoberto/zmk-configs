@@ -51,4 +51,9 @@
                         >;
                 };
        };
+/* (Opcional) Antichatter: súbele el debounce del escaneo */
+&kscan0 {
+  debounce-press-ms = <10>;
+  debounce-release-ms = <20>;
+};
 };
